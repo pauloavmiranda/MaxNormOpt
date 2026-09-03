@@ -963,10 +963,10 @@ int main(int argc, char **argv){
   if(argc < 3){
     fprintf(stdout,"usage:\n");
     fprintf(stdout,"OptMaxNorm <image> <file_seeds> [polarity] [gtruth]\n");
-    fprintf(stdout,"image .... input image (.pgm, .png, .jpg),\n");
+    fprintf(stdout,"image ............. the color input image (.ppm, .png, .jpg),\n");
     fprintf(stdout,"file_seeds ........ the file with seeds (.txt),\n");
     fprintf(stdout,"polarity .......... boundary polarity in the interval [-1, 1] (default = 0.5),\n");
-    fprintf(stdout,"gtruth ............ ground truth image.\n");
+    fprintf(stdout,"gtruth ............ ground truth image in the PGM format.\n");
     exit(0);
   }
 
