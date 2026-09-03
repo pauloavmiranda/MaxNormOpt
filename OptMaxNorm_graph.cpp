@@ -940,7 +940,7 @@ int main(int argc, char **argv){
 
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTime(tic, toc, (char *)"OMN segmentation:");
+  PrintTime(tic, toc, (char *)"MNORA segmentation:");
   //------------------------------------------------
   
   //Para exibir a segmentação final com base nos átomos que sobraram.
@@ -990,7 +990,7 @@ int main(int argc, char **argv){
  
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTime(tic, toc, (char *)"OIF 1st segmentation:");
+  PrintTime(tic, toc, (char *)"OIFT 1st segmentation:");
   //------------------------------------------------
 
   for(s = 0; s < nnodes; s++){
@@ -1008,7 +1008,7 @@ int main(int argc, char **argv){
  
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTime(tic, toc, (char *)"OIF 2nd segmentation:");
+  PrintTime(tic, toc, (char *)"OIFT 2nd segmentation:");
   //------------------------------------------------
 
   for(s = 0; s < nnodes; s++){

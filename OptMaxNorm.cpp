@@ -976,7 +976,7 @@ int main(int argc, char **argv){
     exit(0);
   }
   if( ftell(report) == 0 ){ //start of file
-    fprintf(report, "OMN time; OMN Acc; OIFT-1 time; OIFT-1 Acc; OIFT-2 time; OIFT-2 Acc; ORFC time; ORFC Acc; ORFC-ch time; ORFC-ch Acc\n");
+    fprintf(report, "MNORA time; MNORA Acc; OIFT-1 time; OIFT-1 Acc; OIFT-2 time; OIFT-2 Acc; ORFC time; ORFC Acc; ORFC-ch time; ORFC-ch Acc\n");
   }
   
   strcpy(filename, argv[1]);
@@ -1125,10 +1125,10 @@ int main(int argc, char **argv){
   }
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTimeAcc(tic, toc, label, gtruth, (char *)"OMN segmentation:",
+  PrintTimeAcc(tic, toc, label, gtruth, (char *)"MNORA segmentation:",
 	       report, ACC_DICE, false);
   //------------------------------------------------
-  glip::Image32::Write(label, (char*)"label_omn.pgm");
+  glip::Image32::Write(label, (char*)"label_mnora.pgm");
 #ifdef APPDEBUG
   energy = glip::ift::GetEnergy_Max(graph, label, 1);
   printf("\t energy: %d\n", energy);

@@ -1124,7 +1124,7 @@ int main(int argc, char **argv){
 
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTime(tic, toc, (char *)"OMN segmentation:");
+  PrintTime(tic, toc, (char *)"MNORA segmentation:");
   //------------------------------------------------
 
   L = (int *)calloc(GAD->NE.nnodes, sizeof(int));
@@ -1169,7 +1169,7 @@ int main(int argc, char **argv){
   DestroyGraphAuxiliaryData(&GAD);
 
   label = SPixelsLabels2Image(L, spixels);
-  glip::Image32::Write(label, (char*)"label_omn.pgm");
+  glip::Image32::Write(label, (char*)"label_mnora.pgm");
   if(gtruth != NULL){
     dice = glip::Image32::DiceSimilarity(gtruth, label);
     printf("Dice: %lf\n",dice);
@@ -1186,7 +1186,7 @@ int main(int argc, char **argv){
  
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTime(tic, toc, (char *)"OIF 1st segmentation:");
+  PrintTime(tic, toc, (char *)"OIFT 1st segmentation:");
   //------------------------------------------------
 
   label = SPixelsLabels2Image(L, spixels);
@@ -1208,7 +1208,7 @@ int main(int argc, char **argv){
  
   //------------------------------------------------  
   gettimeofday(&toc,NULL);
-  PrintTime(tic, toc, (char *)"OIF 2nd segmentation:");
+  PrintTime(tic, toc, (char *)"OIFT 2nd segmentation:");
   //------------------------------------------------
 
   label = SPixelsLabels2Image(L, spixels);
